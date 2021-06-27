@@ -1,0 +1,16 @@
+header{
+    background-color: blueviolet;
+    color:burlywood;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Roboto Slab', serif;
+    position: sticky;
+    height: auto;
+}
+body{
+    background-color:burlywood;
+}
+img{
+    width:auto;
+    height: auto;
+}
