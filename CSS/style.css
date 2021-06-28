@@ -3,12 +3,28 @@ header{
     color:burlywood;
     text-align: center;
     font-family: 'Roboto Slab', serif;
-
 }
 body{
     background-color:burlywood;
 }
 img{
-    width:auto;
-    height: auto;
+    width:400px;
+    height:200px;
 }
+header nav ul li{
+    display: inline-block;
+    padding: 30px;
+    font-size: 25px;
+  }
+  header nav ul li a{ 
+    text-decoration-line: none;
+    color:burlywood;
+    
+  }
+  h1{
+    font-family: 'Roboto Slab', serif;
+      color:blueviolet;
+  }
+  footer{
+    background-color: blueviolet;
+  }
