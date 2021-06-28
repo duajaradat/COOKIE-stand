@@ -19,7 +19,7 @@ header nav ul li{
   header nav ul li a{ 
     text-decoration-line: none;
     color:burlywood;
-    
+
   }
   h1{
     font-family: 'Roboto Slab', serif;
@@ -27,4 +27,8 @@ header nav ul li{
   }
   footer{
     background-color: blueviolet;
+  }
+
+  table thead,tr,td,tbody,tfoot{
+      border: 1px solid; 
   }
