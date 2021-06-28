@@ -12,13 +12,17 @@ let Sattle={
     Customers:function(){
         for(let i=0;i<this.Hours.length;i++){
             this.numCustomers[i]=Math.floor(Math.random()*(this.maxCust-this.minCust+1)+this.minCust);
+           
         }
+       
     },
     Cookies:function(){
         // console.log(this.numCustomers);
         for(let i=0;i<this.Hours.length;i++){
             this.numCookies[i]=Math.floor(this.avgCookies*this.numCustomers[i]);
+            
         }
+        
 
     },
     render:function(){
@@ -64,12 +68,14 @@ let Tokyo={
     Customers:function(){
         for(let i=0;i<this.Hours.length;i++){
             this.numCustomers[i]=Math.floor(Math.random()*(this.maxCust-this.minCust+1)+this.minCust);
+           
         }
     },
     Cookies:function(){
         // console.log(this.numCustomers);
         for(let i=0;i<this.Hours.length;i++){
             this.numCookies[i]=Math.floor(this.avgCookies*this.numCustomers[i]);
+            
         }
 
     },
@@ -116,12 +122,14 @@ let Dubai={
     Customers:function(){
         for(let i=0;i<this.Hours.length;i++){
             this.numCustomers[i]=Math.floor(Math.random()*(this.maxCust-this.minCust+1)+this.minCust);
+            
         }
     },
     Cookies:function(){
         // console.log(this.numCustomers);
         for(let i=0;i<this.Hours.length;i++){
             this.numCookies[i]=Math.floor(this.avgCookies*this.numCustomers[i]);
+            
         }
 
     },
@@ -168,12 +176,14 @@ let Paris={
     Customers:function(){
         for(let i=0;i<this.Hours.length;i++){
             this.numCustomers[i]=Math.floor(Math.random()*(this.maxCust-this.minCust+1)+this.minCust);
+            
         }
     },
     Cookies:function(){
         // console.log(this.numCustomers);
         for(let i=0;i<this.Hours.length;i++){
             this.numCookies[i]=Math.floor(this.avgCookies*this.numCustomers[i]);
+            
         }
 
     },
@@ -220,12 +230,14 @@ let Lima={
     Customers:function(){
         for(let i=0;i<this.Hours.length;i++){
             this.numCustomers[i]=Math.floor(Math.random()*(this.maxCust-this.minCust+1)+this.minCust);
+            
         }
     },
     Cookies:function(){
         // console.log(this.numCustomers);
         for(let i=0;i<this.Hours.length;i++){
             this.numCookies[i]=Math.floor(this.avgCookies*this.numCustomers[i]);
+            
         }
 
     },
