@@ -355,6 +355,7 @@ function tBody(Stores) {
     tdEl.textContent=Totalrow;
     rowEl.appendChild(tdEl) ;
 }
+// console.log(totalHr);
 
 
 function tFooter() {
@@ -380,7 +381,7 @@ function tFooter() {
 
 
 
-let Sattle = new Stores("Sattle",24,65,6.3);
+let Sattle = new Stores("Sattle",23,65,6.3);
 let Tokyo=new Stores("Tokyo",3,24,1.2);
 let Dubai=new Stores("Dubai",11,38,3.7);
 let Paris=new Stores("Paris",20,38,2.3);
