@@ -50,19 +50,12 @@ header nav ul li{
     font-size: large;
   }
 
-   /* table thead,tr,td,tbody,tfoot{
-      border:2px solid black ;
-      width: 50%;
-      text-align: center;
-      color: rgb(73, 4, 138);
-      font-size: small;
-  }   */
 
   #store{
     text-align: center;
     color: rgb(40, 7, 71);
     font-size: large;
-     margin-left: 300px;
+     margin-left: 325px;
     margin-right: 300px;
     column-width: 2000px; 
     margin-top: 50px;
@@ -70,5 +63,35 @@ header nav ul li{
   div table th ,tr td{
     border:3px solid blueviolet ;
   }
+  fieldset{
+    margin-top: 50px;
+    width: 30%;
+    margin-left :500px; ;
+  }
+  input {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(40, 7, 71);
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center;
 
+  }
+  input[type=submit] {
+    width: 50%;
+    background-color: blueviolet;
+    color: white;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 100px;
+  }
+  legend{
+    text-align: center;
+    font-size: x-large;
+  }
 
