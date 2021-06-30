@@ -50,12 +50,29 @@ header nav ul li{
     font-size: large;
   }
 
+<<<<<<< HEAD
 
   #store{
     text-align: center;
     color: rgb(40, 7, 71);
     font-size: large;
      margin-left: 325px;
+=======
+   /* table thead,tr,td,tbody,tfoot{
+      border:2px solid black ;
+      width: 50%;
+      text-align: center;
+      color: rgb(73, 4, 138);
+      font-size: small;
+  }   */
+
+  #store{
+
+    text-align: center;
+    color: rgb(40, 7, 71);
+    font-size: large;
+     margin-left: 300px;
+>>>>>>> main
     margin-right: 300px;
     column-width: 2000px; 
     margin-top: 50px;
@@ -63,6 +80,7 @@ header nav ul li{
   div table th ,tr td{
     border:3px solid blueviolet ;
   }
+<<<<<<< HEAD
   fieldset{
     margin-top: 50px;
     width: 30%;
@@ -94,4 +112,7 @@ header nav ul li{
     text-align: center;
     font-size: x-large;
   }
+=======
+
+>>>>>>> main
 
