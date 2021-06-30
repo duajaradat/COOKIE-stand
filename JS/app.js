@@ -326,9 +326,10 @@ function tHeader() {
         rowEl.appendChild(thEl[i]);
         
     }
-}
-tHeader();
 
+}
+
+tHeader();
 
 function tBody(Stores) {
     let bodyEl = document.createElement("tbody");
@@ -381,6 +382,9 @@ function tFooter() {
 
 
 
+
+
+
 let Sattle = new Stores("Sattle",23,65,6.3);
 let Tokyo=new Stores("Tokyo",3,24,1.2);
 let Dubai=new Stores("Dubai",11,38,3.7);
@@ -394,7 +398,51 @@ for(let i=0;i<stores.length;i++){
     
 }
 
+
 tFooter();
+
+
+
+
+// let form=document.getElementById("newLoc");
+// form.addEventListener("submit",addShop)
+
+// function addShop(event){
+
+//     event.preventDefault();  
+//  let Loc=event.target.Loc.value;
+//  console.log("Loc",Loc);
+//  let minCust=event.target.minCust.value;
+//  console.log("minCust",minCust);
+//  let maxCust=event.target.maxCust.value;
+//  console.log("maxCust",maxCust);
+//  let avgCookies=event.target.avgCookies.value;
+//  console.log("avgCookies",avgCookies);
+ 
+//  let i;
+//  for( i=0;i<stores.length;i++){
+//      stores[i].Customers();
+//      stores[i].Cookies();
+     
+//     }
+//     console.log(stores[i].Cookies())
+//     let salmonCookies = new cookies(Loc,minCust,maxCust,avgCookies);
+//     console.log(salmonCookies);
+    
+//     tableEl.textContent=""
+    
+//     let trEl=document.createElement("tr");
+//     tableEl.appendChild(trEl);
+    
+//     tHeader();
+    
+    
+//     for (let n=0;n<stores.length;n++){
+//         stores[n].render();
+//     }
+    
+//     tFooter();
+// }
 
 
 

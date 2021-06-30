@@ -50,10 +50,26 @@ header nav ul li{
     font-size: large;
   }
 
-   table thead,tr,td,tbody,tfoot{
+   /* table thead,tr,td,tbody,tfoot{
       border:2px solid black ;
-      width: 10%;
+      width: 50%;
       text-align: center;
       color: rgb(73, 4, 138);
-      font-size: x-large;
-  }  
+      font-size: small;
+  }   */
+
+  #store{
+
+    text-align: center;
+    color: rgb(40, 7, 71);
+    font-size: large;
+     margin-left: 300px;
+    margin-right: 300px;
+    column-width: 2000px; 
+    margin-top: 50px;
+  }
+  div table th ,tr td{
+    border:3px solid blueviolet ;
+  }
+
+
