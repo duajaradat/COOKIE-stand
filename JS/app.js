@@ -276,7 +276,7 @@
 let Total = 0;
 let Hours = ["       ", " 6 am ", " 7 am  ", " 8 am ", " 9 am ", " 10 am ", " 11 am ", " 12 pm  ", " 1 pm ", " 2 pm ", " 3 pm ", " 4 pm ", " 5 pm ", " 6 pm ", " 7 pm ", " stores total "];
 let stores = [];
-let totalHr=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+let totalHr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 function Stores(Loc, minCust, maxCust, avgCookies) {
     this.Loc = Loc;
     this.minCust = minCust;
@@ -324,7 +324,7 @@ function tHeader() {
         thEl[i].textContent = Hours[i];
         thEl.push(Hours[i]);
         rowEl.appendChild(thEl[i]);
-        
+
     }
 
 }
@@ -340,21 +340,21 @@ function tBody(Stores) {
     rowEl.appendChild(dataEl1);
     dataEl1.textContent = Stores.Loc;
     let dataEl2 = [];
-    let Totalrow=0;
+    let Totalrow = 0;
 
-    for (let i = 0; i < Hours.length-2; i++) {
+    for (let i = 0; i < Hours.length - 2; i++) {
         dataEl2[i] = document.createElement("td");
         dataEl2[i].textContent = Stores.numCookies[i];
-        Totalrow+=Stores.numCookies[i];
-        totalHr[i]+=Stores.numCookies[i];
+        Totalrow += Stores.numCookies[i];
+        totalHr[i] += Stores.numCookies[i];
         rowEl.appendChild(dataEl2[i]);
         dataEl2.push(Stores.numCookies[i]);
         rowEl.appendChild(dataEl2[i]);
 
     }
-    let tdEl=document.createElement("td");
-    tdEl.textContent=Totalrow;
-    rowEl.appendChild(tdEl) ;
+    let tdEl = document.createElement("td");
+    tdEl.textContent = Totalrow;
+    rowEl.appendChild(tdEl);
 }
 // console.log(totalHr);
 
@@ -364,85 +364,76 @@ function tFooter() {
     tableEl.appendChild(footEl);
     let rowEl = document.createElement("tr");
     footEl.appendChild(rowEl);
-    let tdEl1= document.createElement("td");
-        tdEl1.textContent = "Total";
-        rowEl.appendChild(tdEl1);
-        let sum=0;
-    for (let i = 0; i < totalHr.length-1; i++) {
-       let tdEl= document.createElement("td");
-       sum+=totalHr[i];
+    let tdEl1 = document.createElement("td");
+    tdEl1.textContent = "Total";
+    rowEl.appendChild(tdEl1);
+    let sum = 0;
+    for (let i = 0; i < totalHr.length - 1; i++) {
+        let tdEl = document.createElement("td");
+        sum += totalHr[i];
         tdEl.textContent = totalHr[i];
         rowEl.appendChild(tdEl);
-        
+
     }
-    let tdEl2= document.createElement("td");
-        tdEl2.textContent = sum;
-        rowEl.appendChild(tdEl2);
+    let tdEl2 = document.createElement("td");
+    tdEl2.textContent = sum;
+    rowEl.appendChild(tdEl2);
 }
 
 
 
+let Sattle = new Stores("Sattle", 23, 65, 6.3);
+let Tokyo = new Stores("Tokyo", 3, 24, 1.2);
+let Dubai = new Stores("Dubai", 11, 38, 3.7);
+let Paris = new Stores("Paris", 20, 38, 2.3);
+let TLima = new Stores("Lima", 2, 16, 4.6);
 
-
-
-let Sattle = new Stores("Sattle",23,65,6.3);
-let Tokyo=new Stores("Tokyo",3,24,1.2);
-let Dubai=new Stores("Dubai",11,38,3.7);
-let Paris=new Stores("Paris",20,38,2.3);
-let TLima=new Stores("Lima",2,16,4.6);
-
-for(let i=0;i<stores.length;i++){
+for (let i = 0; i < stores.length; i++) {
     stores[i].Customers();
     stores[i].Cookies();
     tBody(stores[i]);
-    
+
 }
 
 
 tFooter();
 
 
+////////////////////////////////////////////////////////////////
 
 
-// let form=document.getElementById("newLoc");
-// form.addEventListener("submit",addShop)
+let form = document.getElementById("newLoc");
+form.addEventListener("submit", addShop)
 
-// function addShop(event){
+function addShop(event) {
+    totalHr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    event.preventDefault();
+    let Loc = event.target.Loc.value;
+    console.log("Loc", Loc);
+    let minCust = event.target.minCust.value;
+    console.log("minCust", minCust);
+    let maxCust = event.target.maxCust.value;
+    console.log("maxCust", maxCust);
+    let avgCookies = event.target.avgCookies.value;
+    console.log("avgCookies", avgCookies);
 
-//     event.preventDefault();  
-//  let Loc=event.target.Loc.value;
-//  console.log("Loc",Loc);
-//  let minCust=event.target.minCust.value;
-//  console.log("minCust",minCust);
-//  let maxCust=event.target.maxCust.value;
-//  console.log("maxCust",maxCust);
-//  let avgCookies=event.target.avgCookies.value;
-//  console.log("avgCookies",avgCookies);
- 
-//  let i;
-//  for( i=0;i<stores.length;i++){
-//      stores[i].Customers();
-//      stores[i].Cookies();
-     
-//     }
-//     console.log(stores[i].Cookies())
-//     let salmonCookies = new cookies(Loc,minCust,maxCust,avgCookies);
-//     console.log(salmonCookies);
-    
-//     tableEl.textContent=""
-    
-//     let trEl=document.createElement("tr");
-//     tableEl.appendChild(trEl);
-    
-//     tHeader();
-    
-    
-//     for (let n=0;n<stores.length;n++){
-//         stores[n].render();
-//     }
-    
-//     tFooter();
-// }
+    let salmonCookies = new Stores(Loc, minCust, maxCust, avgCookies);
+
+    salmonCookies.Customers();
+    salmonCookies.Cookies();
+    tableEl.textContent = ""
+    tHeader();
+
+    for (let i = 0; i < stores.length; i++) {
+        tBody(stores[i]);
+    }
+    tFooter();
+
+
+}
+
+
+
 
 
 
