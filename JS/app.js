@@ -408,13 +408,13 @@ form.addEventListener("submit", addShop)
 function addShop(event) {
     totalHr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     event.preventDefault();
-    let Loc = event.target.Loc.value;
+    let Loc =event.target.Loc.value;
     console.log("Loc", Loc);
-    let minCust = event.target.minCust.value;
+    let minCust =Number(event.target.minCust.value);
     console.log("minCust", minCust);
-    let maxCust = event.target.maxCust.value;
+    let maxCust =Number(event.target.maxCust.value);
     console.log("maxCust", maxCust);
-    let avgCookies = event.target.avgCookies.value;
+    let avgCookies =Number(event.target.avgCookies.value);
     console.log("avgCookies", avgCookies);
 
     let salmonCookies = new Stores(Loc, minCust, maxCust, avgCookies);

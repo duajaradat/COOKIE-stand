@@ -1,9 +1,12 @@
+
 header{
   background-color: blueviolet;
   color:burlywood;
   text-align: center;
   font-family: 'Roboto Slab', serif;
   height: 300px;
+  top: 0px;
+  position: sticky;
 }
 body{
   background-color:burlywood;
@@ -112,6 +115,8 @@ input {
   border-radius: 8px;
   box-sizing: border-box;
   text-align: center;
+  background-color:rgb(186, 173, 199) ;
+  color: rgb(40, 7, 71);
 
 }
 input[type=submit] {
