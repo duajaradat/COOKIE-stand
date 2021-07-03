@@ -18,11 +18,14 @@ header img{
   height: 200px;
   margin-left:20px ;
 }
+
 main h1{
   color:blueviolet;
   text-align: center;
   font-size: 60px;
+  width: 100%;
 }
+
 main article h3{
 color: rgb(73, 4, 138);
 font-size: 30px;
@@ -37,7 +40,8 @@ article{
 }
 section img{
 margin: 50px;
-margin-left: 300px; ;
+margin-left: 300px; 
+border-radius: 50%;
 }
 .img1{
   margin-left: 370px;
@@ -59,14 +63,32 @@ margin-left: 300px; ;
 }
 header nav ul li{
   display: inline-block;
-  padding: 35px;
-  font-size: 30px;
+  padding: 30px;
+  font-size: 25px;
   margin-left: 10px;
+ 
+
 }
 header nav ul li a{ 
   text-decoration-line: none;
   color:burlywood;
+  padding: 20px 20px 20px 20px;
+  
+  
 } 
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgb(86, 54, 116);
+ 
+  
+}
+li a:hover{
+  background-color: blueviolet;
+  
+}
 
  footer{
   background-color: blueviolet;
